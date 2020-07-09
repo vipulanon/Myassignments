@@ -1,0 +1,39 @@
+import random
+test=0
+while test==0:
+    try:
+        num=random.randrange(1000,9999,3)
+        k=str(num)
+        #print(num)
+        num_1=[int(i) for i in k] 
+        print("Enter a number=")
+        cow=0
+        chances=10
+        while cow!=4 and chances>0:
+            user_input=input("")
+            if len(user_input)!=4:
+                print("write a 4 digit number!")
+                continue
+            a=[int(i) for i in user_input]
+            cow=0
+            bull=0
+            for i in range(4):
+                if num_1[i]==a[i]:
+                    cow+=1
+            num_2=set(num_1)
+            a_1=set(a)
+            lst=num_2.intersection(a_1)
+            lst=list(lst)
+            bull=len(lst)-cow
+            print("cow=",cow)
+            print("bull=",bull)
+            chances=chances-1
+            print(f"{chances} chances left..")
+        if chances==0 and cow!=4:
+            print("Better luck next time.")
+        if cow==4:
+            print("congrats!!")
+        test=1   
+    except:
+        print("Write a number plz!")
+        print("Try again!")

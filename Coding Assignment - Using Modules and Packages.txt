@@ -1,0 +1,5 @@
+import math as m
+square_root=m.sqrt(56.98)
+sine_degree=m.sin(26) #measured in radians
+log_e=m.log(1000) #default base is e
+area_of_circle=m.pi*(3.5)**2

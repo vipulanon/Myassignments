@@ -1,0 +1,9 @@
+def bool_func(num1,num2,num3,num4):
+    exp1=str(num1>num2)
+    exp2=str(num1==num3)
+    exp3=str(num2<=num3)
+    exp4=str(num4!=num1)
+    return exp1+exp2+exp3+exp4
+    
+print(bool_func(1,2,3,4))    
+        

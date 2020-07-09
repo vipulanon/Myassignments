@@ -1,0 +1,15 @@
+
+def factor_fun(num):
+    total=0
+    i=1
+    num=24
+    if num>0:
+        while i<=num:
+            if num%i==0 and i%2!=0:
+                total=total+i
+            i=i+1
+        return total
+    else:
+        return -10
+    
+print(factor_fun(24))

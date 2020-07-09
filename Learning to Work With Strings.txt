@@ -1,0 +1,25 @@
+def str_func(st):
+    n=len(st)
+    return st[n-1]
+
+def sum_str_func(num):
+    su=0
+    while num!=0:
+       a=num
+       a=int(a%10)
+       su+=a
+       num=int(num/10)
+       
+    return su
+
+
+def slicing_func(ch):
+    n=len(ch)
+    print(ch[0:2])
+    print(ch[n-2:n])
+    print(ch[1])
+    print(ch[n-2])
+    
+print(str_func('1234'))
+print(sum_str_func(1234))
+slicing_func('abcdef')    

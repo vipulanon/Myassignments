@@ -1,0 +1,9 @@
+def list_func(lst):
+    n=len(lst)
+    lst1=[]
+    lst1.append(lst[0])
+    lst1.append(lst[n-1])
+    return lst1
+
+lst1=[5,10,15,25]
+print(list_func(lst1))

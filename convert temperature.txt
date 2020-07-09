@@ -1,0 +1,4 @@
+Temp_in_celsius=input("Enter the temperature= ")
+x=int(Temp_in_celsius)
+Temp_in_farenheit=(2*x)+32
+print("The temperature in Farenheit is",Temp_in_farenheit)

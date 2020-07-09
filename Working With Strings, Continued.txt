@@ -1,0 +1,19 @@
+def count_ch(st,ch):
+    n=len(st)
+    count=0
+    for i in range(n):
+        if st[i]==ch:
+            count+=1
+    return count
+print(count_ch('abca','a'))
+
+
+def test_func():
+    st1=input("first=")
+    st2=input("second=")
+    n=st2.find(st1)
+    if n==-1:
+        return False
+    else :
+        return True
+print(test_func())

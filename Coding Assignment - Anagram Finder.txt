@@ -1,0 +1,9 @@
+def anagram_func(st1,st2):
+    n1=len(st1)
+    n2=len(st2)
+    total=n1+n2
+    lst=set(list(st1))
+    lst1=set(list(st2))
+    list_1=list(lst1.intersection(lst))
+    return total-2*(len(list_1))
+print(anagram_func("acb", "ghi"))
